@@ -64,15 +64,12 @@ router.post('/', (req, res) => {
       username: req.body.username,
       email: req.body.email,
       password: req.body.password,
-      email: req.body.email,
-      github: req.body.github
     })
     .then(users => {
       req.session.save(() => {
         req.session.user_id = users.id;
         req.session.username = users.username;
         req.session.email = users.email;
-        req.session.github = users.github;
         req.session.loggedIn = true;
     
         res.json(users);
@@ -103,7 +100,6 @@ router.post('/', (req, res) => {
         req.session.user_id = users.id;
         req.session.username = users.username;
         req.session.email = users.email;
-        req.session.github = users.github;
         req.session.loggedIn = true;
   
         res.json({ user: users, message: 'You are now logged in.  Welcome!' });
@@ -112,7 +108,7 @@ router.post('/', (req, res) => {
   });
 
 
-  router.post('/logout', (req, res) => {
+  router.post('/logOut', (req, res) => {
     if (req.session.loggedIn) {
       req.session.destroy(() => {
         res.status(204).end();

@@ -10,7 +10,7 @@ When you click on one of your existing posts in the dashboard, you are able to d
 
 # Live Site Application
 [Link to Live Site]<br>https://github.com/MCalvario/TechBlog
-[Screenshot of application]
+
 
 # Credits
 stack overflow: https://stackoverflow.com/questions/55172456/what-is-mvc-in-the-context-of-backend<br>

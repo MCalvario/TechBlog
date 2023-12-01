@@ -31,7 +31,6 @@ router.get('/', withAuth, (req, res) => {
             attributes: [
               'username', 
               'email', 
-              'github'
             ]
           }
         },
@@ -40,7 +39,6 @@ router.get('/', withAuth, (req, res) => {
           attributes: [
             'username', 
             'email', 
-            'github'
           ]
         }
       ]
@@ -82,7 +80,6 @@ router.get('/', withAuth, (req, res) => {
             attributes: [
               'username', 
               'email', 
-              'github'
             ]
           }
         },
@@ -91,7 +88,6 @@ router.get('/', withAuth, (req, res) => {
           attributes: [
             'username', 
             'email', 
-            'github'
           ]
         }
       ]
@@ -143,7 +139,6 @@ router.get('/create/', withAuth, (req, res) => {
             attributes: [
               'username', 
               'email', 
-              'github'
             ]
           }
         },
@@ -152,7 +147,6 @@ router.get('/create/', withAuth, (req, res) => {
           attributes: [
             'username', 
             'email', 
-            'github'
           ]
         }
       ]
